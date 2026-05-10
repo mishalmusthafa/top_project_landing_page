@@ -9,14 +9,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* padding horizondal  */
+.ph-m{      
+  padding-left: 280px;
+  padding-right: 280px;
+}
+
+/* padding vertical*/
+.pv-m{
+    padding-top: 100px;
+    padding-bottom:100px
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
     height:40px;
-     background-color: #1f2937;
-  color: #f9faf8;
-  padding: 0 220px;
+    background-color: #1f2937;
+    color: #f9faf8;
 
 }
 
@@ -44,7 +56,6 @@ a{
 
 /* Hero contents */
 .hero{
-  padding: 100px 220px;
     display: flex; 
     background-color: #1f2937;
     align-items: stretch
@@ -54,7 +65,7 @@ a{
     flex: 1 ;  
 }
 
-.hero-main-text{
+.hero-maintext{
     font-size: 48px;
     font-weight: 900px;
     color: #f9faf8;
@@ -97,11 +108,9 @@ a{
 
 /* Section information */
 .information {
-    background-color: #FFF;
-    padding: 50px 220px 100px 220px;
 }
 
-.information-header {
+.information-title {
     text-align: center;
     font-size: 36px;
     color: #1f2937;
@@ -109,11 +118,11 @@ a{
     margin-bottom: 50px;
 }
 
-.information-container {
+.information-content {
     display: flex;
     justify-content: space-around;
 }
-.image-text{
+.text-image-container{
     display: flex;
     flex-direction: column;
     width: 150px;
@@ -137,8 +146,13 @@ a{
 /* quote and Testimonial */
 .quote{
     background-color: #e5e7eb;
-    padding: 50px 220px 100px 220px;
 }
+
+.quote > *{
+    margin: 0 auto;
+    width: 80%;
+}
+        
 .quote-text{
     font-size: 36px; 
     color:#1f2937;
@@ -147,7 +161,7 @@ a{
     margin-bottom: 18px;
 
 }
-.siting{
+.citing{
     font-size: 20px;
     font-weight: 900;
     text-align: end;
@@ -155,8 +169,6 @@ a{
 
 /* Call to action */
 .action{
-  padding: 100px 220px;
-    height: 200px;
     display: flex;
     align-items: center;
 }
